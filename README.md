@@ -7,6 +7,16 @@ Before setting up the application, ensure you have the following tools installed
  Python 3.8+ for backend processing.
  PostgreSQL or MySQL as the database to store weather data.
  OpenWeatherMap API Key for accessing weather data.
+ Email SMTP Server: For sending email alerts (e.g., Gmail SMTP server).
+ Git: For version control and pushing code to GitHub.
+ To install libraries , 
+```
+pip install requests
+pip install schedule
+pip install matplotlib
+python weather_processor.py
+python visuals.py
+
 
 # Installation
 Clone the project repository from GitHub to your local machine:

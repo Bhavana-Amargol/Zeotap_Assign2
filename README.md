@@ -16,7 +16,7 @@ pip install schedule
 pip install matplotlib
 python weather_processor.py
 python visuals.py
-
+```
 
 # Installation
 Clone the project repository from GitHub to your local machine:
@@ -121,6 +121,8 @@ Define user thresholds for alerts (e.g., temperature exceeding 35°C) and ensure
 # Bonus Features
 Extended Weather Parameters:
 The system now includes additional parameters such as humidity and wind speed in the rollups and aggregates. The same thresholds can be applied to these parameters, and forecasts are retrieved to alert users ahead of time.
+Additional Weather Parameters: The system now tracks and aggregates humidity and wind speed data.
 
 Forecast Support:
 Weather forecasts for the next 5 days are fetched and processed to provide insights on upcoming weather conditions. Forecast-based alerts trigger notifications if predicted weather exceeds the defined thresholds.
+Weather Forecasting: Weather forecasts for the next 5 days are fetched and processed to generate summaries and forecast-based alerts.

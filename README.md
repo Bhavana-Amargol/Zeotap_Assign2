@@ -107,3 +107,10 @@ Simulate a sequence of weather updates and verify that daily summaries (average,
 Alert Testing:
 
 Define user thresholds for alerts (e.g., temperature exceeding 35°C) and ensure the system triggers alerts when the threshold is breached.
+
+# Bonus Features
+Extended Weather Parameters:
+The system now includes additional parameters such as humidity and wind speed in the rollups and aggregates. The same thresholds can be applied to these parameters, and forecasts are retrieved to alert users ahead of time.
+
+Forecast Support:
+Weather forecasts for the next 5 days are fetched and processed to provide insights on upcoming weather conditions. Forecast-based alerts trigger notifications if predicted weather exceeds the defined thresholds.

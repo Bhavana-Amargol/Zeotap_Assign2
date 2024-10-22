@@ -1,0 +1,26 @@
+from collections import defaultdict
+
+# Store daily weather data
+daily_data = defaultdict(list)
+
+def aggregate_daily_data(weather_data):
+    date_str = datetime.utcfromtimestamp(weather_data['timestamp']).strftime('%Y-%m-%d')
+    daily_data[date_str].append(weather_data)
+
+def calculate_daily_summary(date_str):
+    day_weather_data = daily_data[date_str]
+    temperatures = [data['temperature'] for data in day_weather_data]
+    conditions = [data['condition'] for data in day_weather_data]
+
+    avg_temp = sum(temperatures) / len(temperatures)
+    max_temp = max(temperatures)
+    min_temp = min(temperatures)
+    dominant_condition = max(set(conditions), key=conditions.count)  # Mode of weather conditions
+    
+    return {
+        'date': date_str,
+        'avg_temp': avg_temp,
+        'max_temp': max_temp,
+        'min_temp': min_temp,
+        'dominant_condition': dominant_condition
+    }
